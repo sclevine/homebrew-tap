@@ -35,7 +35,7 @@ class Ztgrep < Formula
   def install
     cpu = Hardware::CPU.intel? ? "amd64" : "arm64"
     os = OS.mac? ? "macos" : "linux"
-    bin.install "ztgrep-#{os}-#{cpu}" => "cosign"
+    bin.install "ztgrep-#{os}-#{cpu}" => "ztgrep"
   end
 
   test do
