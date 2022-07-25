@@ -1,7 +1,7 @@
 class Squashfuse < Formula
   desc "FUSE filesystem to mount squashfs archives"
   homepage "https://github.com/vasi/squashfuse"
-  url "https://github.com/vasi/squashfuse/releases/download/0.1.105/squashfuse-0.1.105.tar.gz"
+  url "https://github.com/vasi/squashfuse/archive/refs/tags/0.1.105.tar.gz"
   sha256 "3f776892ab2044ecca417be348e482fee2839db75e35d165b53737cb8153ab1e"
   license "BSD-2-Clause"
 
