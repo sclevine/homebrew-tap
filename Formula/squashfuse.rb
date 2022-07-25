@@ -6,6 +6,8 @@ class Squashfuse < Formula
   license "BSD-2-Clause"
 
   depends_on "pkg-config" => :build
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
   depends_on "lz4"
   depends_on "lzo"
   depends_on "squashfs"
@@ -17,6 +19,7 @@ class Squashfuse < Formula
   end
 
   def install
+    system "./autogen.sh"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
